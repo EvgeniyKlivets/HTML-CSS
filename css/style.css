@@ -1,0 +1,102 @@
+.html, .body{
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+
+}
+.wrapper{
+    min-height:100%; /*розтягується на 100% якщо є якісь дані*/
+    overflow: hidden;
+}
+.container{
+    width: 1260px;/*ширина*/
+    padding: 0 15px;/*відступ з верху, та справа*/
+    margin: 0 auto;/*а авто режимі збільшується*/
+}
+
+.button {
+    font-weight: 700;/*Жирність*/
+    letter-spacing: 0.5px;
+    line-height: 52px;
+    padding: 0 40px;
+    color: #ffff; 
+    border-radius: 4px;
+    background: linear-gradient(55.95deg,#ff3f3a 0%, #f75e05 100%);
+    white-space: nowrap;
+    margin-right: 36px;
+}
+
+.logo {
+}
+
+.container {
+}
+/*--------------------------------------------------*/
+.header {
+    font-weight: 700;
+}
+.header_top {
+}
+
+.header_top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header_logo {
+    
+    margin-right: 60px;
+}
+
+.header_nav {
+    margin-right: auto;
+}
+.header_nav-list {
+    display: flex;
+}
+.header_nav-item {
+    margin-right: 40px;
+}
+.header_nav-item:last-child {
+    margin-right: 0;
+}
+.header_nav-link {
+    
+    line-height: 1.6;/*160%*/
+    color: #424551;
+    white-space: nowrap;
+}
+.header_btn-box {
+    display: flex;
+    
+}
+.haeder_user-nav{
+    position: relative;
+    padding-left: 28px;
+}
+.haeder_user-nav::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display:block;
+    background: url("images/Icon/log_icon.png") no-repeat;
+    /*width: 20px;
+    height: 20px;*/
+}
+.header_top-buttons {
+    display: flex;
+    align-items: center;
+    
+    
+}
+.header_top-btn {
+    white-space: nowrap;
+    color: #424551;
+    line-height: 1.6;
+    
+}
+
+.header_body {
+}
