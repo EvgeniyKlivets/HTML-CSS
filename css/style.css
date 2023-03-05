@@ -24,6 +24,9 @@
     white-space: nowrap;
     margin-right: 36px;
 }
+.button:hover{
+    transform: scale(1.1);
+}
 
 .logo {
 }
@@ -44,7 +47,6 @@
     padding: 20px 0;
 }
 .header_logo {
-    
     margin-right: 60px;
 }
 
@@ -65,6 +67,11 @@
     line-height: 1.6;/*160%*/
     color: #424551;
     white-space: nowrap;
+}
+.header_nav-link:hover{
+    color: #ff3f3a;
+    transition: all .3s;
+    
 }
 .header_btn-box {
     display: flex;
@@ -95,7 +102,10 @@
     white-space: nowrap;
     color: #424551;
     line-height: 1.6;
-    
+    transition: all .3s;
+}
+.header_top-btn:hover{
+    color: #ff3f3a;
 }
 
 .header_body {
