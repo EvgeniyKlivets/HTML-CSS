@@ -81,7 +81,7 @@
     position: relative;
     padding-left: 28px;
 }
-.haeder_user-nav::before {
+.haeder_user-nav:before {
     content: "";
     position: absolute;
     top: 50%;
