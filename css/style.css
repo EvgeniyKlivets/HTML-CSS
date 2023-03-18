@@ -1,6 +1,8 @@
 .html, .body{
     font-size: 20px;
     font-family: Lato, sans-serif;
+    color: #424551;
+    line-height: 160%;
 
 }
 .wrapper{
@@ -204,4 +206,70 @@ font-size: 46px;
 line-height: 130%;
 margin-right: 16px;
 /*vertical-align: middle;*/
+}
+/*___________________________________________________________________________*/
+.main{
+
+}
+.about_inner{
+    
+}
+.about_createx{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.about_values{
+
+}
+.about_createx-content{
+max-width: 600px;
+}
+
+.heading{
+
+}
+.about_heding {
+margin-bottom: 48px;
+}
+.heading_subtitle{
+line-height: 150%;
+margin-bottom: 8px;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-weight: 700;
+
+}
+.heading_title{
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+}
+.about_text{
+margin-bottom: 24px;
+}
+.about_text: :last-child{
+    margin-bottom: 0;
+    }
+.about_text--accent{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+
+}
+.about_btn-box{
+display: flex;
+}
+
+.about_content-btn{
+margin-right: 24px;
+}
+.about_content-btn:last-child{
+    margin-right: 24px;
+    }
+.about_img{
+ margin-left: 200px;
+}
+.footer{
+
 }
