@@ -52,7 +52,7 @@
   border-image: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   border-image-slice: 1;*/
 }
-.logo {
+.logo{
 }
 
 .container {
@@ -66,7 +66,7 @@
 .logo{
     border-radius: 20px;
 }
-.header_top {
+.header_top{
 }
 
 .header_top-inner {
@@ -110,14 +110,14 @@
     position: relative;
     padding-left: 28px;
 }
-.haeder_user-nav:before {
+.haeder_user-nav:before{
     /*content: "";
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);*/
     /*display:block;*/
-    /*background: url("images/Icon/log_icon.png") no-repeat;*/
+    /*background: url("images/Icon/log_icon.jpg") no-repeat;*/
     
     /*width: 20px;
     height: 20px;*/
@@ -252,7 +252,7 @@ line-height: 130%;
 .about_text{
 margin-bottom: 24px;
 }
-.about_text: :last-child{
+.about_text::last-child{
     margin-bottom: 0;
     }
 .about_text--accent{
@@ -313,34 +313,65 @@ margin-right: 16px;
 
 }
 .directions_inner{
-
+/*display: flex;*/
+margin-top: 150px;
 }
 .heading{
 
 }
 .directions_heding{
+margin-bottom: 90px;
 
 }
-.heading_subtitle{
+.heading_subtitle_ {
+    line-height: 150%;
+margin-bottom: 8px;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-weight: 700;
+margin-left: 700px;
 
 }
-.heading_title{
-
+.heading_title_{
+    font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+margin-left: 600px;
 }
 .directions_body{
 
 }
 .directions_filter_box{
+    display: flex;
+    margin-bottom: 56px;
+    margin-left: 500px;
 
 }
 .directions_filter-item{
-
+    margin-right: 45px;
 }
+.directions_filter-item:last-child{
+    margin-right: 0px;
+    }
 .directions_filter-btn{
-
+background-color: transparent;
+color: #9a9ca5;
+border: 1px solid #9a9ca5;
+border-radius: 4px;
+font-weight: 700;
+padding: 7px;
+line-height: 1.6;
+font-size: 16px;
+}
+.directions_filter-btn--active{
+background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+border: none;
+color: azure;
 }
 .directions_list{
-
+display: grid;
+grid-template: repeat(2, auto) / repeat(3, 1fr);
+gap: 30px; /*відступ між колонками по 30 зверху та побокам*/
 }
 .direction_list_item{
 
@@ -349,24 +380,50 @@ margin-right: 16px;
 
 }
 .directions_list-link{
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+.directions_list-link--active{
 
 }
 .direction_image-box{
 
 }
 .direction_lik_content{
-
+padding: 24px;
+display: flex;
+flex-direction: column;
 }
 .direction_link-tag{
-
+    background-color: #999;
+    color: #ffff;
+    border: 1px solid #9a9ca5;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 7px;
+    line-height: 1.6;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-bottom: 20px;
 }
 .directions_link-tex{
+    color: #787a78;
+    margin-bottom: 20px;
 
 }
 .direction_link-btn{
-    
+    color: #424551;
+    display: flex;
+    font-weight: 900;
 }
+.direction_link-btn::after{
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    background: url("../images/section/right-arrow.jpg") 0 2px / 100% no-repeat;}
 
-.footer{
-
-}
+.footer{}
