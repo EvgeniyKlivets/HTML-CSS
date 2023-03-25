@@ -307,7 +307,7 @@ margin-right: 16px;
 }
 /*______________________________________SECTION_3_____________________________________________*/
 .directions{
-
+padding-bottom: 180px;
 }
 .conteiner{
 
@@ -319,25 +319,27 @@ margin-top: 150px;
 .heading{
 
 }
+.heading_tex{
+    text-align: center;
+}
 .directions_heding{
 margin-bottom: 90px;
 
 }
-.heading_subtitle_ {
-    line-height: 150%;
+/*.heading_subtitle_ {
+line-height: 150%;
 margin-bottom: 8px;
 letter-spacing: 1px;
 text-transform: uppercase;
 font-weight: 700;
 margin-left: 700px;
-
 }
 .heading_title_{
-    font-weight: 900;
+font-weight: 900;
 font-size: 46px;
 line-height: 130%;
 margin-left: 600px;
-}
+}*/
 .directions_body{
 
 }
@@ -374,27 +376,59 @@ grid-template: repeat(2, auto) / repeat(3, 1fr);
 gap: 30px; /*відступ між колонками по 30 зверху та побокам*/
 }
 .direction_list_item{
-
+    border-radius: 4px;
+    overflow: hidden;
 }
-.direction_list_item--empty{
 
+.direction_list_item--empty{
+    background: #f4f5f7;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.direction_list_item--empty span{
+    background: #f4f5f7;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: 240px;
 }
 .directions_list-link{
     display: block;
     border-radius: 4px;
     overflow: hidden;
+    transition: all 3s;
+}
+.directions_list-link:hover {
+    transition: all 3s;
+}
 
+.directions_list-link:hover .direction_link-btn{
+    color: #ff3f3a;
+    transition: all 1s;
 }
 .directions_list-link--active{
 
 }
 .direction_image-box{
-
 }
-.direction_lik_content{
+.direction_image-box img{
+    /*width: 100%;
+    height: 100%;*/
+}
+.direction_link_content{
 padding: 24px;
 display: flex;
 flex-direction: column;
+border: 1px solid #e5e8ed;
+border-top: none;
 }
 .direction_link-tag{
     background-color: #999;
@@ -417,6 +451,7 @@ flex-direction: column;
     color: #424551;
     display: flex;
     font-weight: 900;
+    transition: all .3s;
 }
 .direction_link-btn::after{
     display: block;
@@ -425,5 +460,22 @@ flex-direction: column;
     height: 12px;
     margin-left: 10px;
     background: url("../images/section/right-arrow.jpg") 0 2px / 100% no-repeat;}
+
+.direction_list_item--marketing .direction_link-tag{
+    background-color: #03cea4;
+}
+.direction_list_item--hr .direction_link-tag{
+    background-color: #5a87f6;
+}
+.direction_list_item--desing .direction_link-tag{
+    background-color: #f897f8;
+}
+.direction_list_item--development .direction_link-tag{
+    background-color: #f52f6e;
+}
+.direction_list_item--manegement .direction_link-tag{
+    background-color: #7772f1;
+}
+/*________________________*/
 
 .footer{}
