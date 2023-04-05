@@ -523,5 +523,22 @@ border-top: none;
 .cert_image-box{
 
 }
+/*-------------------------------------Section 5 TEAM-----------------------------------------------*/
+.main_team{
+    margin-top: 60px;
+}
+.team{}
+.team_inne{}
+.team_heading{}
+.team_slider{}
+.team_image-box{}
+.team_image{}
+.team_sociols-items{}
+.team_sociols-link{}
+.team_sociols{}
+.team_info{}
+.team_info_name{}
+.team_info_position{}
+
 
 .footer{}
