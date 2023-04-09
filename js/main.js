@@ -9,6 +9,8 @@ $ ('.directions_filter-btn').on('click', function (){
 
 /* Повині появитися Previous and next*/
 $('.team_slider').slick({
-
+arrows:false, /*стрілки відключені*/
+slidesToShow: 4, /*одночасно 4 слайда показує*/
+isFinite:true,
 })
 })
