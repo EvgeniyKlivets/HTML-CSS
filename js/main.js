@@ -12,5 +12,7 @@ $('.team_slider').slick({
 arrows:false, /*стрілки відключені*/
 slidesToShow: 4, /*одночасно 4 слайда показує*/
 isFinite:true,
+draggable:false,/*прокрутка слайда не працює*/
+appendArrows: $('.team_slider-arrows'),/*звернення до стрілки*/
 })
 })
