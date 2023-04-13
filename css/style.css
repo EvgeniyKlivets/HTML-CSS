@@ -528,7 +528,9 @@ border-top: none;
     padding: 160px 0px 180px;
     margin-top: 60px;
 }
-.team{}
+.team{
+    background-color:  url("") 200px 30px no-repeat,#f4f5f7;
+}
 .team_inner{}
 .team_heading{
     margin-bottom: 40px;
@@ -612,10 +614,48 @@ border-top: none;
 }
 .team_slider-arrows{
     position: absolute;
+    display: flex;
     
-    right:0;
-    bottom: 0;
+    
+   
 }
+.team_slider-arrow{
+    border-radius: 50%;
+    display: block;
+    line-height: 0;
+    position: relative;
+    
+}
+.team_slider-arrow:hover{
+    
+    box-shadow: 0 0 20px #f52f6e;
+}
+.team_slider-arrow:hover path{
+transition: all .3s;
+}
+.team_slider-arrow:hover path{
+    fill: #ffff;
+}
+.team_slider-arrow::before{/*зміна стрілок*/
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width:48px;
+    height: 48px;
+    background-color: #f52f6e;
+    border-radius: 90%;
+    z-index: -1;
+    transition: all .3s;
+}
+.team_slider-arrow:hover::before{
+    transform: translate(-50%, -50%) scale(1);
+}
+.team_slider-prev{
+    margin-right: 24px;
+}
+.team_slider-next{}
 
 
 
