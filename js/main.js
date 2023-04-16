@@ -11,6 +11,19 @@ $ ('.directions_filter-btn').on('click', function (){
 $('.team_slider').slick({
 arrows:false, /*стрілки відключені*/
 slidesToShow: 4, /*одночасно 4 слайда показує*/
-isFinite:true,
+inFinite:true,
+draggable:true,/*прокрутка слайда не працює*/
+/*appendArrows: $('.team_slider-arrows'),*//*звернення до стрілки*/
+waitForAnimate:false,/*швидко перелистувати слайди*/
+})
+$('.team_slider-prev').on('click', function (e){
+    e.preventDefault()
+    $('.team_slider').slick('slikPrev')
+    
+})
+$('.team_slider-next').on('click', function (e){
+    e.preventDefault()
+    $('.team_slider').slick('slickNext')
+
 })
 })

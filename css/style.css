@@ -525,12 +525,18 @@ border-top: none;
 }
 /*-------------------------------------Section 5 TEAM-----------------------------------------------*/
 .main_team{
+    padding: 160px 0px 180px;
     margin-top: 60px;
 }
-.team{}
+.team{
+    background-color:  url("") 200px 30px no-repeat,#f4f5f7;
+}
 .team_inner{}
 .team_heading{
     margin-bottom: 40px;
+}
+.team_slider-wrapper{
+    position: relative;
 }
 .team_slider .slick-list{
     margin:0 -15px;
@@ -540,6 +546,9 @@ border-top: none;
 }
 .team_slide:hover{
     box-shadow: inset;
+}
+.team_slide:hover .team_socials{
+    transform: translateY(0%);
 }
 .team_image-box{
     border-radius: 4px;
@@ -569,8 +578,10 @@ border-top: none;
     right: 0;
     bottom: 0;
     padding: 20px;
-  
-    /*background: linear-gradient(180deg);*/
+    transform: translateY(50%);
+    transition: all .3s;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.8)) ;/*щоб було затемнення на слайді*/
+    /*background-color: rgba(0,0,0.5)*/
 }
 .team_socials-items{
     margin-right: 12px;
@@ -578,8 +589,13 @@ border-top: none;
 .team_socials-items:last-child{
     margin-right: 0;
 }
+.team_socials-link {
+    display: block;
+    line-height: 0;
+}
 .team_socials-link path{
-transition: all .3s;
+    display: block;
+    transition: all .3s;
 }
 .team_socials-link:hover path{
     fill: #ffff;
@@ -596,6 +612,50 @@ transition: all .3s;
 .team_info_position{
     color: #787a78;
 }
+.team_slider-arrows{
+    position: absolute;
+    display: flex;
+    
+    
+   
+}
+.team_slider-arrow{
+    border-radius: 50%;
+    display: block;
+    line-height: 0;
+    position: relative;
+    
+}
+.team_slider-arrow:hover{
+    
+    box-shadow: 0 0 20px #f52f6e;
+}
+.team_slider-arrow:hover path{
+transition: all .3s;
+}
+.team_slider-arrow:hover path{
+    fill: #ffff;
+}
+.team_slider-arrow::before{/*зміна стрілок*/
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width:48px;
+    height: 48px;
+    background-color: #f52f6e;
+    border-radius: 90%;
+    z-index: -1;
+    transition: all .3s;
+}
+.team_slider-arrow:hover::before{
+    transform: translate(-50%, -50%) scale(1);
+}
+.team_slider-prev{
+    margin-right: 24px;
+}
+.team_slider-next{}
 
 
 
