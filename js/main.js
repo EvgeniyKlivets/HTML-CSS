@@ -1,4 +1,5 @@
-$ (function(){
+$ (function()
+{
     var mixer = mixitup ('.directions_list');
 /* Повині переключатися кнопка на яку кликають*/
 
@@ -18,12 +19,18 @@ waitForAnimate:false,/*швидко перелистувати слайди*/
 })
 $('.team_slider-prev').on('click', function (e){
     e.preventDefault()
-    $('.team_slider').slick('slikPrev')
+    $('.team_slider').slick('slickPrev')
     
 })
 $('.team_slider-next').on('click', function (e){
     e.preventDefault()
     $('.team_slider').slick('slickNext')
-
 })
+
+$('.testimonials_slider-wrapper').slick({
+    arrows:true,
+    draggable:true
+    /*dots:true,*/
+})
+
 })
