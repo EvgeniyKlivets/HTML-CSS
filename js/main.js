@@ -28,9 +28,17 @@ $('.team_slider-next').on('click', function (e){
 })
 
 $('.testimonials_slider-wrapper').slick({
-    arrows:true,
+    arrows:false,
     draggable:true
     /*dots:true,*/
 })
-
+$('.testimonials_prev').on('click', function (e){
+    e.preventDefault()
+    $('.testimonials_slider').slick('slickPrev')
+    
+})
+$('.testimonials_next').on('click', function (e){
+    e.preventDefault()
+    $('.testimonials_slider').slick('slickNext')
+})
 })
