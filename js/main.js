@@ -27,18 +27,19 @@ $('.team_slider-next').on('click', function (e){
     $('.team_slider').slick('slickNext')
 })
 
-$('.testimonials_slider-wrapper').slick({
+    $('.testimonials_slider').slick({
     arrows:false,
-    draggable:true
-    /*dots:true,*/
+    draggable:true,
+    dots:false,
 })
+
 $('.testimonials_prev').on('click', function (e){
     e.preventDefault()
-    $('.testimonials_slider').slick('slickPrev')
+    $('.testimonials_slide').slick('slickPrev')
     
 })
 $('.testimonials_next').on('click', function (e){
     e.preventDefault()
-    $('.testimonials_slider').slick('slickNext')
+    $('.testimonials_slide').slick('slickNext')
 })
 })
