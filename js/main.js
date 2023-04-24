@@ -30,8 +30,10 @@ $('.team_slider-next').on('click', function (e){
     $('.testimonials_slider').slick({
     arrows:false,
     draggable:true,
-    dots:false,
+    dots:true,
+    appendDots:$('.testimonials_dots'),
 })
+
 
 $('.testimonials_prev').on('click', function (e){
     e.preventDefault()
