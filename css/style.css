@@ -822,7 +822,7 @@ background-color: #5a87f6;
     height: 100%;
     filter: grayscale(1);/*роботь чорнобілим зображення*/
     opacity: 0.6;
-    transition: all .1.3s;
+    transition: all 1.3s;
 }
 .companies_grid-link:hover img{
     opacity: 1;
