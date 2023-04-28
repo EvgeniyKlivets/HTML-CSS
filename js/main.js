@@ -44,4 +44,16 @@ $('.testimonials_next').on('click', function (e){
     e.preventDefault()
     $('.testimonials_slide').slick('slickNext')
 })
+
+/*+/-*/
+//$('.program_acc-link').on('click', function(e){
+   // e.preventDefault()
+   //$(this).toggleClass('program_acc-link--active')/*перевертає +/-*/
+   //$(this).children('.program_acc-text').slideToggle()/*розкриває/закриває*/})
+/*Accordion*/
+$('.program_acc-link').on('click', function(e){
+    e.preventDefault()
+   $(this).toggleClass('program_acc-link--active')/*перевертає +/-*/
+   $(this).children('.program_acc-text').slideToggle()/*розкриває/закриває*/
+})
 })
