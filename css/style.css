@@ -887,11 +887,11 @@ background-color: #5a87f6;
  }
 .program_acc-head::after{
    /*+*/
-   transform: rotate(0deg);
+   transform: rotate(90deg);
    transition: all .3s;
 }
 .program_acc-link--active .program_acc-head::after{
-    transform: rotate(90deg)
+    transform: rotate(0deg)
 }
 .program_acc-text{
     margin-top: 16px;
