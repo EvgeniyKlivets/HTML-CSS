@@ -46,14 +46,22 @@ $('.testimonials_next').on('click', function (e){
 })
 
 /*+/-*/
-//$('.program_acc-link').on('click', function(e){
-   // e.preventDefault()
-   //$(this).toggleClass('program_acc-link--active')/*перевертає +/-*/
-   //$(this).children('.program_acc-text').slideToggle()/*розкриває/закриває*/})
-/*Accordion*/
 $('.program_acc-link').on('click', function(e){
     e.preventDefault()
    $(this).toggleClass('program_acc-link--active')/*перевертає +/-*/
-   $(this).children('.program_acc-text').slideToggle()/*розкриває/закриває*/
-})
+   $(this).children('.program_acc-text').slideToggle()/*розкриває/закриває*/})
+/*Accordion*/
+//$('.program_acc-link').on('click', function(e){
+    //e.preventDefault()
+   //if($(this).hasClass('program_acc-link--active')){
+   // $(this).removeClass('program_acc-link--active')/*перевертає +/-*/
+    //$(this).children('.program_acc-text').slideUp()
+ //  } else{
+   // $('.program_acc-link').removeClass('program_acc-link--active')
+   // $('.program_acc-text').slideUp()
+   // $(this).addClass('program_acc-link--active')
+   // $(this).children('.program_acc-text').slideDown()/*розкриває/закриває*/
+    
+   //}
+//})
 })

@@ -418,8 +418,8 @@ gap: 30px; /*відступ між колонками по 30 зверху та 
 .direction_image-box{
 }
 .direction_image-box img{
-    width: 100%;
-    height: 100%;
+   /* width: 100%;
+    height: 100%;*/
 }
 .direction_link_content{
 padding: 24px;
@@ -837,6 +837,7 @@ background-color: #5a87f6;
 .program_inner{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .program_content{
     max-width: 600px;
@@ -896,6 +897,29 @@ background-color: #5a87f6;
 .program_acc-text{
     margin-top: 16px;
 }
+/*-------------------------------------SECTION 9 BLOG-----------------------------------------*/
+.main_blog{}
+.blog{}
+.blog_inner{}
+.blog_top{}
+.blog_heading{}
+.blog_row{}
+.blog_item{}
+.blog_item-link{}
+.blog_item-inner{}
+.blog_image-box{}
+.blog_item-content{}
+.blog_item-info{}
+.blog_info-dir{}
+.blog_info-date{}
+.blog_info-time{}
+.blog_item-title{}
+.blog_item-text{}
+.blog_item-button{}
+
+
+
+
 
 /*-------------------------------------FOOTER-----------------------------------------*/
 .footer{}
