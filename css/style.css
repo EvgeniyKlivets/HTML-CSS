@@ -1198,3 +1198,32 @@ transition: all .3s;
 
 /*-------------------------------------FOOTER-----------------------------------------*/
 .footer{}
+.footer_top{}
+.footer_top-inner{}
+.footer_top-col{}
+.footer_logo{}
+.footer_top-text{}
+.footer_socials{
+    display: flex;
+}
+.footer_socials-item{
+    margin-right: 32px;
+}
+.footer_social-link{
+    transition: all .3s;
+}
+.footer_social-link:hover path{
+    fill: #f52f6e;
+}
+.footer_top-title{}
+.footer_top-list{}
+.footer_top-item{}
+.footer_top-link{}
+.footer_form{}
+.footer_form_input{}
+
+/*-------------------------------------------------------------------------*/
+.footer_bottom{}
+.footer_bottom-inner{}
+.footer_copy{}
+.footer_go-top{}
