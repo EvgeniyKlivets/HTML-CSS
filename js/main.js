@@ -64,6 +64,7 @@ $('.program_acc-link').on('click', function(e){
     
    //}
 //})
+/*плавний перехід */
 $(".header_content-btn, .header_nav-list a, .header_top-btn, .haeder_user-nav, .footer_top-link, .footer_go-top, .about_content-btn").on("click", function (e){
     //відміняємо стандартною обработку нажаття по силці
     e.preventDefault()
