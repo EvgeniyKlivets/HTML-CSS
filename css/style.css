@@ -1057,13 +1057,13 @@ background-color: #5a87f6;
 
 }
 .info_email .info_item-top::before{
-    background: url() 0/0 100% no-repeat;
+    background: url("") 0/0 100% no-repeat;
 }
 .info_tel .info_item-top::before{
-    background: url() 0/0 100% no-repeat;
+    background: url("") 0/0 100% no-repeat;
 }
 .info_address .info_item-top::before{
-    background: url() 0/0 100% no-repeat;
+    background: url("") 0/0 100% no-repeat;
 }
 .info_item-link{
     font-style: 18px;
@@ -1212,6 +1212,7 @@ transition: all .3s;
 .footer_top-col{
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
 }
 .footer_top-col:first-child{
     max-width: 400px;
@@ -1320,7 +1321,7 @@ transition: all .3s;
    left: 0;
    width: 16px;
    height: 16px;
-   background: url("")0/0;
+   background: url("../images/Icon/log_icon.jpg");
 
     
 }
@@ -1330,8 +1331,41 @@ transition: all .3s;
 }
 /*-------------------------------------------------------------------------*/
 .footer_bottom{
-    color: #787a78;
+    background-color: #424551;
 }
-.footer_bottom-inner{}
-.footer_copy{}
-.footer_go-top{}
+.footer_bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 -15px;
+    
+}
+.footer_copy{
+    
+}
+.footer_copy span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/Icon/heart.svg") 0 0 / 100% 100% no-repeat;
+    vertical-align: sub;
+    
+}
+.footer_go-top{
+    color: #e5e8ed;
+    font-weight: 700;
+    font-style: 14px;
+    line-height: 150%;
+    opacity: 0.6;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.footer_go-to:hover{
+    opacity: 1;
+}
+
+.footer_go-to::placeholder{
+    color: #e5e8ed;
+    opacity: .6;
+}
