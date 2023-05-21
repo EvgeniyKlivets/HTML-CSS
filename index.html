@@ -11,40 +11,40 @@
     <link rel="stylesheet" href="css/style.css">
     <title>HTML/CSS</title>
 </head>
-<body>
+<body id="body">
     <div class="wrapper">
         <header class="header">
             <div class="header_top">
                 <div class="container">
                     <div class="header_top-inner">
-                        <a class="header_logo logo" href="#">
+                        <a class="header_logo logo" href="/">
                             <img src="images/logo/logo_1.jpg" alt="logo_1" width="50" height="40" class="logo">
                         </a>
                         <nav class="header_nav">
                             <ul class="header_nav-list">
                                 <li class="header_nav-item">
-                                    <a class="header_nav-link" href="#"> About Us</a>
+                                    <a class="header_nav-link" href="#about"> About Us</a>
                                 </li>
                                 
                                 <li class="header_nav-item">
-                                    <a class="header_nav-link" href="#">Courses</a>
+                                    <a class="header_nav-link" href="#directions">Courses</a>
                                 </li>
                                 
                                 <li class="header_nav-item">
-                                    <a class="header_nav-link" href="#">Events</a>
+                                    <a class="header_nav-link" href="#info">Events</a>
                                 </li>
                                 
                                 <li class="header_nav-item">
-                                    <a class="header_nav-link" href="#">Blog</a>
+                                    <a class="header_nav-link" href="#blog">Blog</a>
                                 </li>
                                
                                 <li class="header_nav-item">
-                                    <a class="header_nav-link" href="#">Contact</a>
+                                    <a class="header_nav-link" href="#maps">Contact</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="header_btn-box">
-                            <a class="haeder_user-nav button" href="#">Get consultation</a>
+                            <a class="haeder_user-nav button" href="#questions">Get consultation</a>
                             <div class="header_top-buttons">
                                 <a class="header_top-btn" href="#">Log in/</a>
                                 
@@ -71,8 +71,8 @@
                                     Enjoy Studying With School Online Courses
                                 </h1>
                                 <div class="header_content-buttons">
-                                    <a class="header_content-btn button button-empty" href="#"><span>About us</span></a>
-                                    <a class="header_content-btn button" href="#">Explore courses</a>
+                                    <a class="header_content-btn button button-empty" href="#about"><span>About us</span></a>
+                                    <a class="header_content-btn button" href="#directions">Explore courses</a>
                                 </div>
                             </div>
                             <img class="header_img" src="images/header_1.jpg" weight="400" height="400" alt="">
@@ -105,7 +105,7 @@
         </header>
 <!--section_2-->
     <main class="main">
-            <section class="main_about about">
+            <section class="main_about about" id="about">
                 <div class="container">
                     <div class="about_inner">
                         <div class="about_createx">
@@ -125,7 +125,7 @@
                                 </p>
                                 <div class="about_btn-box">
                                     <a class="about_content-btn button button-empty" href="#"><span>Explore events</span></a>
-                                    <a class="about_content-btn button" href="#">Browse courses</a>
+                                    <a class="about_content-btn button" href="#directions">Browse courses</a>
                                 </div>
                             </div>
                             <img src="images/header_2.jpg" weight="400" height="400" alt="" class="about_img">
@@ -157,8 +157,8 @@
                 </div>
             </section>
             <!---Section_3-->
-            <section class="main_directions directions">
-                <div class="conteiner">
+            <section class="main_directions directions" id="directions">
+                <div class="container">
                     <div class="directions_inner">
                         <div class="directions_heading heading heading_tex">
                             <p class="heading_subtitle">Our main directions</p>
@@ -190,10 +190,10 @@
                             <ul class="directions_list">
                                 <li class="mix direction_list_item direction_list_item--marketing" data-order="1">
                                     <a  class="directions_list-link" href="#">
-                                    <div class="direction_image-box">
+                                    <div class="direction_image-box" >
                                         <img src="images/section/1.jpg" alt="" weight="100" height="100">
                                         <div class="direction_link_content">
-                                            <div class="direction_link-tag">Marketing</div>
+                                            <div class="direction_link-tag" >Marketing</div>
                                             <p class="directions_link-tex">Odio posuere netus quisque faucibus lectus arcu donec.</p>
                                             <div class="direction_link-btn">Check courses</div>
                                         </div>
@@ -261,7 +261,7 @@
                 </div>
             </section>
         <!------------------------------Section_4 CERT-------------------> 
-        <section class="main_cert cert">
+        <section class="main_cert cert" id="cert">
             <div class="container">
                 <div class="cert_inner">
                     <div class="cert_content">
@@ -289,7 +289,7 @@
             </div>   
         </section>  
      <!--------------------------SECTION 5  TEAM------------------------------------------------>  
-     <section class="main_team team">
+     <section class="main_team team" id="team"">
         <div class="container">
             <div class="team_inner">
                 <div class="directions_heading heading heading_tex">
@@ -502,7 +502,7 @@
         </div>
      </section> 
      <!-------------------------section_6 testimonials-----------------------> 
-     <section class="main_testimonials testimonials">
+     <section class="main_testimonials testimonials" id="testimonials">
         <div class="container">
             <div class="testimonials_inner">
                 <div class="directions_heading heading heading_tex">
@@ -654,7 +654,7 @@
        
      </section>
      <!--                             SECTION 7 Companies     -->
-     <section class="main_companies companies">
+     <section class="main_companies companies" id="companies">
         <div class="container">
             <div class="companies_inner">
                 <div class="directions_heading heading heading_tex">
@@ -716,7 +716,7 @@
         </div>
      </section>
      <!----                      SECTION 8 PROGRAM             -->
-     <section class="main_program program">
+     <section class="main_program program" id="program">
         <div class="container">
             <div class="program_inner">
                 <div class="program_content">
@@ -760,7 +760,7 @@
         </div>
      </section>
      <!--------------------------------------  SECTION 9 BLOG----------------------------------- -->
-     <section class="main_blog blog">
+     <section class="main_blog blog" id="blog">
         <div class="container">
             <div class="blog_inner">
                 <div class="blog_top">
@@ -878,7 +878,7 @@
         </div>
      </section>
      <!----------------------------------------------SECTION 10_ MAPS -------------------------------------------->
-     <section class="main_info info_maps">
+     <section class="main_info info_maps" id="maps">
         <div class="container">
             <div class="info_inner">
                 <div class="info_content">
@@ -945,8 +945,8 @@
         </div>
      </section>
      <!------------------------------------------------SECTION 11 QUESTION-------------------------------->
-    <section>
-        <div class="main_questions questions">
+    <section class="main_questions questions" id="questions">
+        
             <div class="container">
                 <div class="questions_inner">
                     <!--<div class="questions_heading heading heading_tex">
@@ -995,10 +995,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </section>
     </main>        
-       <footer class="footer">
+       <footer class="footer" id="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="footer_top-inner">
@@ -1046,19 +1046,19 @@
                         <h3 class="footer_top-title">SITE MAP</h3>
                         <ul class="footer_top-list">
                             <li class="footer_top-item">
-                                <a href="#" class="footer_top-link">About Us</a>
+                                <a href="#about" class="footer_top-link">About Us</a>
                             </li>
                             <li class="footer_top-item">
-                                <a href="#" class="footer_top-link">Courses</a>
+                                <a href="#directions" class="footer_top-link">Courses</a>
                             </li>
                             <li class="footer_top-item">
-                                <a href="#" class="footer_top-link">Events</a>
+                                <a href="#info" class="footer_top-link">Events</a>
                             </li>
                             <li class="footer_top-item">
-                                <a href="#" class="footer_top-link">Blog</a>
+                                <a href="#blog" class="footer_top-link">Blog</a>
                             </li>
                             <li class="footer_top-item">
-                                <a href="#" class="footer_top-link">Contacts</a>
+                                <a href="#maps" class="footer_top-link">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -1069,7 +1069,7 @@
                                 <a href="#" class="footer_top-link">Marketing</a>
                             </li>
                             <li class="footer_top-item">
-                                <a href="#" class="footer_top-link">Managment</a>
+                                <a href="#" class="footer_top-link">Management</a>
                             </li>
                             <li class="footer_top-item">
                                 <a href="#" class="footer_top-link">HR & Recruting</a>
@@ -1119,7 +1119,7 @@
                     <span></span>
                     by Createx Studio
                     </div>
-                    <a href="#" class="footer_go-top">GO TO TOP</a>
+                    <a href="#body" class="footer_go-top">GO TO TOP</a>
                 </div>
             </div>
         </div>
