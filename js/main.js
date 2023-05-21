@@ -64,5 +64,14 @@ $('.program_acc-link').on('click', function(e){
     
    //}
 //})
-
+$(".header_content-btn, .header_nav-list a, .header_top-btn, .haeder_user-nav, .footer_top-link, .footer_go-top, .about_content-btn").on("click", function (e){
+    //відміняємо стандартною обработку нажаття по силці
+    e.preventDefault()
+    //забираємо індентифікатор бока з атрибутом href
+    var id = $(this).attr('href'),
+    //дізнаємося висоту від початку сторінки до блока на якому ссилаємо якорь
+    top = $(id).offset().top 
+    //інмуємо перехід на дистанції за 1500с
+    $('body,html').animate({scrollTop: top}, 1500)
+})
 })
