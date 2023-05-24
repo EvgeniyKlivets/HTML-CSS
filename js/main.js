@@ -64,6 +64,7 @@ $('.program_acc-link').on('click', function(e){
     
    //}
 //})
+
 /*плавний перехід */
 $(".header_content-btn, .header_nav-list a, .header_top-btn, .haeder_user-nav, .footer_top-link, .footer_go-top, .about_content-btn").on("click", function (e){
     //відміняємо стандартною обработку нажаття по силці
@@ -74,5 +75,15 @@ $(".header_content-btn, .header_nav-list a, .header_top-btn, .haeder_user-nav, .
     top = $(id).offset().top 
     //інмуємо перехід на дистанції за 1500с
     $('body,html').animate({scrollTop: top}, 1500)
+})
+//щоб працював Бургер
+if (window.screenTop()>0) {
+    $('.burger').addClass('.burger--folow')
+}else{
+    $('.burger').removeClass('.burger--folow')
+}
+$('.burger').on('click', function (e) {
+    e.preventDefault()
+    $('.header_top').toggleClass('header_top--open')
 })
 })
